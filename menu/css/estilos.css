@@ -79,6 +79,11 @@ footer {
     color: #fff8f0;
 }
 
+.menu-estrella [data-alergenos]:hover {
+    background-color: #5a3e36;
+    color: #fff8f0;    
+}
+
 .menu-estrella [data-alergenos="lácteos"]:before {
     content: '🥛';
 }
