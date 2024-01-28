@@ -1,0 +1,128 @@
+body {
+    margin: 5;
+    padding: 5;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff8f0;
+    color: #5a3e36;
+}
+
+header {
+    background-color: #5a3e36;
+    color: #fff8f0;
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    background-color: #836259;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;    
+    padding: 5px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff8f0;
+    padding: 10px 20px ;
+}
+
+nav a:hover{
+    color: #ecdcc6;
+}
+
+main{
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.menu-estrella {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #5a3e36;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #a77e58;
+    color: #ecdcc6;
+    text-align: center;
+    padding: 10px;
+}
+
+.redes-sociales {
+    padding: 10px;
+}
+
+.redes-sociales a {
+    color: #5a3e36;
+    padding: 10px;
+    text-decoration: none;
+}
+.redes-sociales a:hover {
+    color: #fff8f0;
+}
+
+.menu-estrella [data-alergenos="lácteos"]:before {
+    content: '🥛';
+}
+
+.menu-estrella [data-alergenos="nueces"]:before {
+    content: '🌰';
+}
+
+.menu-estrella [data-alergenos="mariscos"]:before {
+    content: '🦐';
+}
+
+.menu-estrella [data-alergenos="gluten"]:before {
+    content: '🍞';
+}
+
+.menu-estrella [data-alergenos="pescado"]:before {
+    content: '🐟';
+}
+
+.menu-estrella [data-alergenos="frutos-secos"]:before {
+    content: '🥜';/
+}
+
+.menu-estrella li[data-alergenos="frutos-rojos"]:before {
+    content: '🍓';
+}
+
+.menu-estrella [data-alergenos*="nueces"][data-alergenos*="mariscos"]:before {
+    content: '🌰 🦐';
+}
+
+.menu-estrella [data-alergenos*="gluten"][data-alergenos*="lácteos"]:before {
+    content: '🍞 🥛';
+}
+.menu-estrella [data-alergenos*="gluten"][data-alergenos*="mariscos"]:before {
+    content: '🍞 🦐';
+}
+.menu-estrella [data-alergenos*="lácteos"][data-alergenos*="frutos-secos"]:before {
+    content: '🥛 🥜';
+}
+.menu-estrella [data-alergenos*="huevos"][data-alergenos*="lácteos"]:before {
+    content: '🥚 🥛';
+}
+.menu-estrella [data-alergenos*="frutos-rojos"][data-alergenos*="lácteos"]:before {
+    content: '🍓 🥛';
+}
