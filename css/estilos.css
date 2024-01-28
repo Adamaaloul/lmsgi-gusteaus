@@ -15,7 +15,7 @@ div.encabezado{
     background-position-y:bottom;
     background-position-x:center;
     background-repeat:no-repeat;
-    
+    margin-bottom: 20px;
 }
 
 div.encabezado img {
@@ -26,10 +26,22 @@ div.encabezado img {
 div.menu ul li a{
     background-color: #a77e58;
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif ;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    transition: 0.5s;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px; 
+}
+
+div.menu ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+div.menu ul li {
+    display: inline-block;
+    margin-right: 10px;
 }
 
 div.menu ul li a:hover{
@@ -45,7 +57,8 @@ div.contenido{
     font-size: 18px;
     float: left;
     width: 65%;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 div.sidebar{
@@ -56,8 +69,8 @@ div.sidebar{
     float: right;
     width: 30%;
     padding: 10px;
-    margin-bottom: 50px
-    
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 div.pie{
@@ -90,7 +103,7 @@ div.pie a:hover{
 #formularioReserva input[type='text'],
 #formularioReserva input[type='email'],
 #formularioReserva input[type='tel'],
-#formularioReserva input[type='num'],
+#formularioReserva input[type='number'],
 #formularioReserva input[type='date'],
 #formularioReserva input[type='time'],
 #formularioReserva input[type='text'],
