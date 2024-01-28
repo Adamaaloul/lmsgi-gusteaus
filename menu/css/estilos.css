@@ -23,14 +23,13 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;    
     padding: 5px;
 }
 
 nav a{
     text-decoration: none;
     color: #fff8f0;
-    padding: 10px 20px ;
+    padding: 10px 20px ; 
 }
 
 nav a:hover{
@@ -79,6 +78,11 @@ footer {
     color: #fff8f0;
 }
 
+.menu-estrella [data-alergenos]:hover {
+    background-color: #5a3e36;
+    color: #fff8f0;    
+}
+
 .menu-estrella [data-alergenos="lácteos"]:before {
     content: '🥛';
 }
@@ -103,7 +107,7 @@ footer {
     content: '🥜';/
 }
 
-.menu-estrella li[data-alergenos="frutos-rojos"]:before {
+.menu-estrella [data-alergenos="frutos-rojos"]:before {
     content: '🍓';
 }
 
